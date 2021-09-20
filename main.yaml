@@ -120,7 +120,7 @@ spec:
     http:
       paths:
       - path: /
-        #pathType: Prefix
+        pathType: Prefix
         backend:
           serviceName: realtimeapp-active
           servicePort: 80
