@@ -112,8 +112,8 @@ metadata:
   name: bg-ingress
   annotations:
     kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/affinity: cookie
-    nginx.ingress.kubernetes.io/affinity-mode: persistent
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    #nginx.ingress.kubernetes.io/affinity-mode: persistent
 spec:
   rules:
   - host: real.baeke.info
